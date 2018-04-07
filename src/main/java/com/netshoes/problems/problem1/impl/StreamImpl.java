@@ -6,11 +6,11 @@ import com.netshoes.problems.problem1.api.Stream;
 // NAO RENOMEAR ESSA CLASSE!
 public class StreamImpl implements Stream {
 
-    // TODO sua implementacao! Fique a vontade para criar suas classes/interfaces caso julgue necessario.
+    private Character[] text;
 
     // Nao alterar esse construtor!
     public StreamImpl(String stream) {
-        // TODO sua implementacao! Fique a vontade para criar suas classes/interfaces caso julgue necessario.
+         setText(stream.chars().mapToObj(c -> (char)c).toArray(Character[]::new));
     }
 
     @Override
@@ -23,5 +23,13 @@ public class StreamImpl implements Stream {
     public boolean hasNext() {
         // TODO sua implementacao! Fique a vontade para criar suas classes/interfaces caso julgue necessario.
         return false;
+    }
+
+    public Character[] getText() {
+        return text;
+    }
+
+    public void setText(Character[] text) {
+        this.text = text;
     }
 }

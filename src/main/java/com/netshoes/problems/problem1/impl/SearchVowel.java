@@ -9,8 +9,7 @@ public class SearchVowel {
 
     // NAO ALTERAR ESSA ASSINATURA!
     public static char firstChar(Stream input) {
-        // TODO sua implementacao! Nesse ponto deve ser feita a adaptacoes necessarias para que os testes executem com sucesso
-        return 'x';
+       return 'x';
     }
 
 }
